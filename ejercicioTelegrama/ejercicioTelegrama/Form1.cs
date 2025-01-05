@@ -31,7 +31,8 @@ namespace ejercicioTelegrama
                 tipoTelegrama = 'u';
             }
             //Obtengo el número de palabras que forma el telegrama
-            numPalabras = textoTelegrama.Length;
+            string[] palabras = textoTelegrama.Split(' ');
+            numPalabras = palabras.Length;
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
             {
